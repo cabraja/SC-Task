@@ -60,3 +60,63 @@ h1 {
   font-family: PT-Text;
   font-size: 1.2rem;
 }
+
+/* GRID --------------- */
+
+#step-1-photo {
+  background-image: url(./step-1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+}
+#step-2-photo {
+  background-image: url(./step-2.jpg);
+  background-size: cover;
+  background-position: 70%;
+}
+#step-3-photo {
+  background-image: url(./step-3-4.jpg);
+  background-size: cover;
+  background-position: 80%;
+  grid-column: 3/4;
+  grid-row: 3/5;
+}
+
+main {
+  width: 90%;
+  height: 220vh;
+  margin: 100px auto;
+}
+#grid {
+  width: 100%;
+  text-align: center;
+  height: 220vh;
+  display: grid;
+  grid-template-columns: 20% 30% 1fr;
+  grid-template-rows: 25% 25% 30% 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.grid-number {
+  background-color: rgb(104, 255, 240);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: PT-Heading;
+  font-size: 10rem;
+}
+
+.grid-paragraph {
+  font-size: 1.4rem;
+  font-family: PT-Text;
+  padding: 10px 20px;
+}
+
+.grid-paragraph h3 {
+  font-family: PT-Heading;
+  margin-bottom: 30px;
+}
+
+/* GRID-------------- */
