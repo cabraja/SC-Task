@@ -1,0 +1,132 @@
+header {
+  padding-top: 15vh;
+  height: 40vh;
+}
+
+#header-text {
+  font-size: 1.1rem;
+}
+#header-text h3 {
+  font-family: PT-Text;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+#grid {
+  all: initial;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+#step-3-photo {
+  background-image: url(./step-3-4.jpg);
+  background-size: cover;
+  background-position: 80%;
+  grid-column: unset;
+  grid-row: unset;
+}
+
+.grid-number {
+  background-color: rgb(104, 255, 240);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: PT-Heading;
+  font-size: 12rem;
+}
+
+.grid-paragraph {
+  font-size: 1.1rem;
+  font-family: PT-Text;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.grid-paragraph h3 {
+  font-family: PT-Heading;
+  margin-bottom: 20px;
+}
+
+/* GRID POSITIONING -------------- */
+
+/* LEFT-SIDE */
+
+#step-1-photo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 250px;
+}
+
+#grid-paragraph-2 {
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+
+#grid-number-3 {
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+
+#step-3-photo {
+  grid-column: 1/2;
+  grid-row: 7/9;
+}
+
+#grid-paragraph-4 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+/* LEFT-SIDE */
+
+/* RIGHT-SIDE */
+
+#grid-number-2 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+#step-2-photo {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+#grid-paragraph-3 {
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+
+#grid-number-4 {
+  grid-column: 2/3;
+  grid-row: 8/10;
+}
+/* RIGHT-SIDE */
+
+#zemeckis {
+  all: initial;
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 14px;
+  }
+
+  #grid {
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+
+  .grid-paragraph {
+    padding: 10px 10px;
+  }
+}
